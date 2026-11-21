@@ -1,30 +1,37 @@
-فكرة المشروع: تحليل بيانات المعاملات البنكية
-الفكرة في جملة واحدة
-حوّلنا سنتين من سجلات البنك الخام إلى موديل بيانات نظيف، ومجموعة مؤشرات أداء (KPIs)، وداش بورد من 3 صفحات في Power BI. الداش بورد بيوضح أداء البنك، وأين بتفشل العمليات، ومين هم العملاء.
-1. الخلفيه
-البنوك بتسجل كل إيداع وسحب وتحويل ودفع. السجلات دي فيها إجابات أسئلة الإدارة اليومية، بس بشرط إن البيانات تتنضف وتتربط وتتقاس.
-2. المشكلة
-سجلات العمليات الخام مش بتوضح:
-أنهي قنوات بتفشل أكتر،
-إمتى بيبقى الضغط في ذروته،
-أنهي فروع وشرائح عملاء بتجيب أعلى قيمة.
-من غير تحليل منظم، القرارات بتتاخد بالحدس.
-3. الأهداف
-بناء موديل بيانات نظيف ومترابط من 5 جداول.
-تحديد مؤشرات واضحة: عدد العمليات، وقيمتها، ونسبة النجاح، وصافي التدفق، ونسبة إغلاق الحسابات.
-متابعة الأداء عبر الزمن وحسب نوع العملية والقناة والفرع.
-معرفة أين ولماذا بتفشل العمليات.
-تحليل العملاء وحالة الحسابات.
-تسليم داش بورد تفاعلي مع توصيات عملية.
-4. البيانات
-المصدر: ملف Excel واحد فيه 5 شيتات.
-العمليات (Transactions): 210,994 سجل.
-العملاء: 2,940.
-الحسابات: 117.
-الفروع: 12 فرع في 5 مناطق.
-القنوات: 5 (الفرع، الصراف الآلي، تطبيق الموبايل، الإنترنت البنكي، نقاط البيع).
-الفترة: من نوفمبر 2024 إلى أكتوبر 2026.
-6. الأدوات
-Excel: مصدر البيانات الخام.
-MySQL: التخزين والتحقق بـ SQL.
-Power BI: التنظيف والنمذجة وDAX والداش بورد.
+# Bank Transaction Data Analysis
+
+**One-line idea:** We turned two years of raw bank records into a clean data model, a set of KPIs, and a 3-page Power BI dashboard. The dashboard shows how the bank is performing, where operations fail, and who the customers are.
+
+## 1. Background
+Banks record every deposit, withdrawal, transfer, and payment. These records hold the answers to management's daily questions, but only if the data is cleaned, linked, and measured.
+
+## 2. Problem
+Raw transaction records don't show:
+- Which channels fail the most.
+- When the peak load happens.
+- Which branches and customer segments bring in the highest value.
+
+Without structured analysis, decisions are made by intuition.
+
+## 3. Objectives
+- Build a clean, connected data model from 5 tables.
+- Define clear KPIs: transaction count, transaction value, success rate, net flow, and account closure rate.
+- Track performance over time and by transaction type, channel, and branch.
+- Find where and why transactions fail.
+- Analyze customers and account status.
+- Deliver an interactive dashboard with practical recommendations.
+
+## 4. Source Data
+A single Excel file with 5 sheets:
+- **Transactions:** 210,994 records.
+- **Customers:** 2,940.
+- **Accounts:** 117.
+- **Branches:** 12 branches across 5 regions.
+- **Channels:** 5 (Branch, ATM, Mobile App, Internet Banking, POS).
+
+**Period:** November 2024 to October 2026.
+
+## 5. Tools
+- **Excel:** raw data source.
+- **MySQL:** storage and validation using SQL.
+- **Power BI:** cleaning, modeling, DAX, and the dashboard.
